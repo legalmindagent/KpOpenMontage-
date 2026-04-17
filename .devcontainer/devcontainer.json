@@ -1,0 +1,9 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.12" },
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y ffmpeg && make setup && pip install piper-tts && cd remotion-composer && npm install && cd ..",
+  "remoteUser": "root"
+}
